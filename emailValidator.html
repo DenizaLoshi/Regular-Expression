@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Email Check</h3>
+
+    <input type="Email Address" id="email">
+    <p>Email Address:</p>
+
+    <button>Check</button>
+
+    <script>
+        function checkEmail(){
+            let result = document.querySelector('.result')
+            var emailInput = document.getElementById("email").value;
+            if (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(emailInput)) {
+                result.innerHTML = "Email is valid"
+                result.style.color = "#55C0A6"
+            } else {
+                result.innerHTML = "Email is invalid"
+                result.style.color = '#f15b5b'
+            }
+        }
+
+
+        // https://www.youtube.com/watch?v=sXQxhojSdZM
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // metoda e pare 
+        let regex1 = /[a-c]/
+
+        // metoda e dyte
+        // let regex2 = new RegExp('a-b')
+
+        let emri = "jcoders"
+        console.log(regex1.exec(emri))
+
+
+        // funksionet e stringjeve
+        // match()
+        let text = "London, Spain, Paris";
+        let result = text.match("ain");
+        console.log(result)
+
+
+        // replace()
+        let text1 = "E hwnw!";
+        let result1 = text.replace("w", "e");
+        console.log(result1)
+        // Rezultati: E henw!
+
+
+        // replaceAll()
+        let text2 = "E henw!";
+        let result2 = text2.replaceAll("w", "e");
+        console.log(result2)
+
+
+        //// Flags ////
+
+        // /w -> wore
+        // /d -> digits
+        // /g -> global
+
+        // Regular Expression Website:
+        // https://regexr.com/
+
+
+        //// Email Validator ////
+
+        // https://drive.google.com/drive/folders/1JgslBWEZQ-HuJJrlcbCzBdqApm8J77Hm
+    </script>
+
+</body>
+</html>
