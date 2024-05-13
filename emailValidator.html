@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email Check</title>
 </head>
 <body>
-    <h3>Email Check</h3>
+    <h1>Email Check</h1>
 
-    <input type="Email Address" id="email">
+    <input id="email" type="Email Address">
     <p>Email Address:</p>
 
-    <button>Check</button>
+    <button onclick="checkEmail()">Check</button>
+    <p class="result"></p>
 
     <script>
         function checkEmail(){
@@ -28,6 +29,12 @@
 
 
         // https://www.youtube.com/watch?v=sXQxhojSdZM
+
+
+        // pjesa e pare: /^[]/  -> ^ dithqysh me fillu me qata
+        // /d -> digits (numra)
+        // pjesa dyt eshte cka bon per p.sh. gmail me perdor (mas @)
+        // pjesa e trete: eshte cka guxon me shkrujt mas pikes (2 deri ne 4 shkrojna)
     </script>
 </body>
 </html>

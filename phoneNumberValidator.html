@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Check</title>
+</head>
+<body>
+    <h1>Number Check</h1>
+
+    <input id="number" type="Phone Number">
+    <p>Phone Number:</p>
+
+    <button onclick="checkNumber()">Check</button>
+    <p class="result"></p>
+
+    <script>
+        function checkNumber(){
+            let result = document.querySelector('.result')
+            var numberInput = document.getElementById("number").value;
+            if (/^\+383\s\d{2}\s\d{3}\s\d{3}$/.test(numberInput)) {
+                result.innerHTML = "Phone Number is valid"
+                result.style.color = "#55C0A6"
+            } else {
+                result.innerHTML = "Phone Number is invalid"
+                result.style.color = '#f15b5b'
+            }
+        }
+
+    </script>
+</body>
+</html>
